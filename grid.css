@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a a b'
+    'a a a b'
+    'c c d d'
+    'c c e e'
+    
+    ;
+    gap: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+main div {
+    padding: 2em;
+    text-align: center;
+    border-radius: 7px;
+}
+.A{
+    background-color:orangered;
+    grid-area: a;
+
+}
+.B{
+    background-color: orange;
+    grid-area: b;
+    height: 5em;
+}
+.C{
+    background-color: forestgreen;
+    grid-area: c;
+}
+.D{
+    background-color: lightblue;
+    grid-area: d;
+    height: 1em;
+
+}
+.E{
+    background-color: lightblue;
+    grid-area: e;
+    height: 2em;
+}
